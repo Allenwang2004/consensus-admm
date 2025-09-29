@@ -100,58 +100,6 @@ Python Interface
         def solve(self) -> dict:
             """Run ADMM iterations and return consensus + local solutions."""
 
-
-
-Installation & Build Instructions
-===================================
-
-Dependencies
-------------
-
-Required:
-    • C++17 compatible compiler (GCC 7+, Clang 6+, MSVC 2017+)
-    • CMake 3.14+
-    • Eigen3 linear algebra library
-    • Python 3.7+ with NumPy
-    • pybind11 2.6+
-
-On macOS::
-
-    brew install eigen cmake
-    pip install numpy pybind11
-
-On Ubuntu/Debian::
-
-    sudo apt-get install libeigen3-dev cmake build-essential
-    pip install numpy pybind11
-
-Build from Source
------------------
-
-1. Clone the repository::
-
-    git clone https://github.com/Allenwang2004/consensus-admm.git
-    cd consensus-admm
-
-2. Install Python build dependencies::
-
-    pip install -r requirements-build.txt
-
-3. Build and install the package::
-
-    pip install .
-
-   For development installation::
-
-    pip install -e .
-
-4. (Optional) Build C++ tests with CMake::
-
-    mkdir build && cd build
-    cmake ..
-    make
-    ./tests/test_consensus_admm
-
 Quick Start
 -----------
 
