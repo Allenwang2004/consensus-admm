@@ -1,0 +1,5 @@
+# Requirements for building the package
+pybind11>=2.6.0
+setuptools>=45.0
+wheel
+numpy>=1.19.0
