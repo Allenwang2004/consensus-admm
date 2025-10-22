@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "pybind11>=2.6.0", "numpy>=1.19.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "consensus-admm"
+version = "0.1.0"
+description = "A high-performance Consensus ADMM optimization toolkit"
+authors = [{name = "Allen Wang", email = "your.email@example.com"}]
+license = {text = "MIT"}
+readme = "README.rst"
+requires-python = ">=3.7"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: C++",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "numpy>=1.19.0",
+    "pybind11>=2.6.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/Allenwang2004/consensus-admm"
+Repository = "https://github.com/Allenwang2004/consensus-admm"
+Issues = "https://github.com/Allenwang2004/consensus-admm/issues"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=6.0",
+    "pytest-cov",
+    "black",
+    "flake8",
+    "mypy",
+]
+examples = [
+    "matplotlib>=3.0",
+    "scipy>=1.0",
+    "scikit-learn>=0.24",
+]
